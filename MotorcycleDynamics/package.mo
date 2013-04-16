@@ -12,7 +12,7 @@ Documentation(info="<HTML>
 The MotorcycleDynamics package is free software.<br><br>
  
 Licensed by Filippo Donida under the Modelica License 2
-Copyright © 2002-2006, Politecnico di Milano.<br><br>
+Copyright &copy; 2002-2006, Politecnico di Milano.<br><br>
  
 This Modelica package is free software and the use is completely at your own risk;<br>
 it can be redistributed and/or modified under the terms of the Modelica license 2,<br>
@@ -437,7 +437,7 @@ package Chassis
                            annotation (extent=[48,68; 58,78],   rotation=270);
     Modelica.Mechanics.MultiBody.Parts.BodyShape LeftPedal(
       r={0,0.18,0},
-      r_CM={0,.09,0},
+      r_CM={0,0.09,0},
       width=0.045,
       m=0,
       animateSphere=false,
@@ -1567,8 +1567,8 @@ of front suspension.
           Steering_M=9.99,
           Suspension_M=7.25,
           animation=true,
-          Spring[:,:]=[-0.1, -1000000;-0.08, -450; -0.06, -215.934; -0.05, 450.691; 0, 850.666; 0.048, 1234.642; 0.054, 1330.636; 0.06, 1959.3967; 0.08, 2800; 0.1, 1000000],
-          Damper[:,:]=[-1.41, -2237.975; -0.72, -1535.48; -0.39, -1038.549; -0.21, -800.809; -0.09, -450.455; -0.02, -101.889; 0.02, 101.889; 0.09, 266.341; 0.2, 350.354; 0.39, 491.568; 0.76, 802.597; 1.16, 1144.013],
+          Spring=[-0.1, -1000000;-0.08, -450; -0.06, -215.934; -0.05, 450.691; 0, 850.666; 0.048, 1234.642; 0.054, 1330.636; 0.06, 1959.3967; 0.08, 2800; 0.1, 1000000],
+          Damper=[-1.41, -2237.975; -0.72, -1535.48; -0.39, -1038.549; -0.21, -800.809; -0.09, -450.455; -0.02, -101.889; 0.02, 101.889; 0.09, 266.341; 0.2, 350.354; 0.39, 491.568; 0.76, 802.597; 1.16, 1144.013],
           Front_s_unstretched=0.88,
           color={90,90,90},
           Steer_Stopper = 20);
@@ -1598,8 +1598,8 @@ of front suspension.
           Steering_M=9.99,
           Suspension_M=9.67,
           animation=true,
-          Spring[:,:]=[-0.206,-6497.2;-0.2059,-6496.3;-0.20345,-6231.0;-0.20065,-5663.3;-0.19805,-5240.8;-0.19568,-4885.9;-0.19210,-4508.1;-0.18962,-4270.4;-0.18279,-3712.1;-0.17582,-3305.3;-0.17088,-3084.4;-0.16096,-2726.6;-0.15125,-2443.5;-0.13904,-2151.3;-0.12920,-1951.2;-0.11948,-1773.6;-0.10974,-1608.3;-0.10053,-1461.6;-0.09068,-1315.3;-0.08112,-1180.3;-0.07108,-1047.4;-0.06144,-920.8;-0.04922,-767.4;-0.03955,-646.2;-0.02964,-530.6;-0.02045,-420.5;-0.01084,-309.5;0.00,182.4;0.01084,309.5;0.02045,420.5;0.02964,530.6;0.03955,646.2;0.04922,767.4;0.06144,920.8;0.07108,1047.4;0.08112,1180.3;0.09068,1315.3;0.10053,1461.6;0.10974,1608.3;0.11948,1773.6;0.12920,1951.2;0.13904,2151.3;0.15125,2443.5;0.16096,2726.6;0.17088,3084.4;0.17582,3305.3;0.18279,3712.1;0.18962,4270.4;0.19210,4508.1;0.19568,4885.9;0.19805,5240.8;0.20065,5663.3;0.20345,6231.0;0.20590,6496.3;0.2060,6497.2],
-          Damper[:,:]=[-4,-2200.0;-1.950,-1215.0;-1.4850,-950.0;-1.2500,-815.0;-1.0000,-690.0;-0.7550,-557.0;-0.5050,-403.0;-0.2000,-164.0;-0.1000,-77.0;-0.0500,-48.0;-0.0100,-31.0;0.0,0.0;0.0100,36.0;0.0500,52.0;0.1000,54.0;0.2000,59.0;0.5000,75.0;0.7500,90.0;1.0000,103.0;1.2500,139.0;1.5000,135.0;1.7200,152.0;1.9500,166.0;4.0000,300.0],
+          Spring=[-0.206,-6497.2;-0.2059,-6496.3;-0.20345,-6231.0;-0.20065,-5663.3;-0.19805,-5240.8;-0.19568,-4885.9;-0.19210,-4508.1;-0.18962,-4270.4;-0.18279,-3712.1;-0.17582,-3305.3;-0.17088,-3084.4;-0.16096,-2726.6;-0.15125,-2443.5;-0.13904,-2151.3;-0.12920,-1951.2;-0.11948,-1773.6;-0.10974,-1608.3;-0.10053,-1461.6;-0.09068,-1315.3;-0.08112,-1180.3;-0.07108,-1047.4;-0.06144,-920.8;-0.04922,-767.4;-0.03955,-646.2;-0.02964,-530.6;-0.02045,-420.5;-0.01084,-309.5;0.00,182.4;0.01084,309.5;0.02045,420.5;0.02964,530.6;0.03955,646.2;0.04922,767.4;0.06144,920.8;0.07108,1047.4;0.08112,1180.3;0.09068,1315.3;0.10053,1461.6;0.10974,1608.3;0.11948,1773.6;0.12920,1951.2;0.13904,2151.3;0.15125,2443.5;0.16096,2726.6;0.17088,3084.4;0.17582,3305.3;0.18279,3712.1;0.18962,4270.4;0.19210,4508.1;0.19568,4885.9;0.19805,5240.8;0.20065,5663.3;0.20345,6231.0;0.20590,6496.3;0.2060,6497.2],
+          Damper=[-4,-2200.0;-1.950,-1215.0;-1.4850,-950.0;-1.2500,-815.0;-1.0000,-690.0;-0.7550,-557.0;-0.5050,-403.0;-0.2000,-164.0;-0.1000,-77.0;-0.0500,-48.0;-0.0100,-31.0;0.0,0.0;0.0100,36.0;0.0500,52.0;0.1000,54.0;0.2000,59.0;0.5000,75.0;0.7500,90.0;1.0000,103.0;1.2500,139.0;1.5000,135.0;1.7200,152.0;1.9500,166.0;4.0000,300.0],
           Front_s_unstretched=0.88,
           color={90,90,90},
           Steer_Stopper = 20);
@@ -1733,8 +1733,8 @@ of front suspension.
         extends Base_Rear_Suspension_Data(
           s_unstretched=0.255,
           animation=true,
-          Spring[:,:]=[-0.351, -1000000; -0.35, -62580.77; -0.3, -25928.77; 0, -4059.23; 0.29, 330470.63; 0.32, 454920.65; 0.35, 100204.09; 0.351, 1000000],
-          Damper[:,:]=[-1.41, -41961.922584; -0.72, -28790.173226; -0.39, -19472.73859; -0.21, -15015.125477; -0.09, -8446.01196; -0.02, -1910.410423; 0.02, 1910.410423; 0.09, 4493.8772; 0.2, 6569.113517; 0.39, 9216.875442; 0.76, 15048.630387; 1.16, 21450.183317]);
+          Spring=[-0.351, -1000000; -0.35, -62580.77; -0.3, -25928.77; 0, -4059.23; 0.29, 330470.63; 0.32, 454920.65; 0.35, 100204.09; 0.351, 1000000],
+          Damper=[-1.41, -41961.922584; -0.72, -28790.173226; -0.39, -19472.73859; -0.21, -15015.125477; -0.09, -8446.01196; -0.02, -1910.410423; 0.02, 1910.410423; 0.09, 4493.8772; 0.2, 6569.113517; 0.39, 9216.875442; 0.76, 15048.630387; 1.16, 21450.183317]);
         annotation (
           defaultComponentName="Rear_Suspension_data");
       end Supermotard_Rear_Suspension_Data;
@@ -1753,8 +1753,8 @@ of front suspension.
         extends Base_Rear_Suspension_Data(
        s_unstretched=0.255,
           animation=true,
-          Spring[:,:]=[-0.0746, -22640; -0.070, -15950; -0.069, -15470; -0.0675, -14655; -0.065, -13740; -0.060, -12300; -0.050, -9900; -0.0465, -9025; -0.040, -8050; -0.030, -6550; -0.020, -5050; -0.010, -3550; 0, 2050; 0.010, 3550; 0.020, 5050; 0.030, 6550; 0.040, 8050; 0.0465, 9025; 0.050, 9900; 0.060, 12300; 0.065, 13740; 0.0675, 14655; 0.069, 15470; 0.070, 15950; 0.0746, 22640],
-          Damper[:,:]=[-4.0000,-22500;-1.4280,-9694;-1.2140,-8558;-0.9820,-7294;-0.7420,-5936;-0.5000,-4520;-0.2500,-2745;-0.1000,-1532;-0.0500,-1020;-0.0097,-150;0,0;0.0100,105;0.0503,408;0.1000,690;0.2500,1628;0.5000,2637;0.7430,3516;0.9820,4354;1.2120,5110;1.4400,5860;4.0000,15000]);
+          Spring=[-0.0746, -22640; -0.070, -15950; -0.069, -15470; -0.0675, -14655; -0.065, -13740; -0.060, -12300; -0.050, -9900; -0.0465, -9025; -0.040, -8050; -0.030, -6550; -0.020, -5050; -0.010, -3550; 0, 2050; 0.010, 3550; 0.020, 5050; 0.030, 6550; 0.040, 8050; 0.0465, 9025; 0.050, 9900; 0.060, 12300; 0.065, 13740; 0.0675, 14655; 0.069, 15470; 0.070, 15950; 0.0746, 22640],
+          Damper=[-4.0000,-22500;-1.4280,-9694;-1.2140,-8558;-0.9820,-7294;-0.7420,-5936;-0.5000,-4520;-0.2500,-2745;-0.1000,-1532;-0.0500,-1020;-0.0097,-150;0,0;0.0100,105;0.0503,408;0.1000,690;0.2500,1628;0.5000,2637;0.7430,3516;0.9820,4354;1.2120,5110;1.4400,5860;4.0000,15000]);
           
       end KTM_950_Rear_Suspension_Data;
     end Data;
@@ -2448,7 +2448,7 @@ of front suspension.
     Sensor[5]        := atan2(x_POC[2], x_POC[1]);
     Sensor[6]        := Pin.roll;
     when abs(Pin.roll)>(pi/2)*0.9 then
-                                        terminate("CADUTA!!! Il pilota ti supplica di non esagerare con il gas, sii più prudente!");
+                                        terminate("CADUTA!!! Il pilota ti supplica di non esagerare con il gas, sii pi&ugrave; prudente!");
                                                                  end when;
   end Wheel_Road_Interaction;
     
@@ -2813,7 +2813,7 @@ This type of friction is perfectly interchangeable thanks to the Friction connec
       arg = Bt*lambdat;
       Dt = Pin.N*(R0/Fz0)*(qdz1+qdz2*dfz)*(1+qdz3*sign(Pin.roll)+qdz4*Pin.roll^2);
       Et=(qez1+qez2*dfz)*(1+qez5*Pin.roll*(2/pi)*atan(Bt*Ct*Pin.sideslip));
-      Mz = (-Dt * cos(Ct * atan(arg - Et * (arg -atan(arg)))))/(1+Pin.sideslip^2)^.5 * Fygamma0 + Mzr;
+      Mz = (-Dt * cos(Ct * atan(arg - Et * (arg -atan(arg)))))/(1+Pin.sideslip^2)^0.5 * Fygamma0 + Mzr;
       Fygamma0 = cos(Cyroll * atan(Byk * Pin.slip)) * Fy0gamma0;
       Fy0gamma0=Dy*sin(fact1);
       Dr=Pin.N*R0*((qdz8+qdz9*dfz)*Pin.roll+(qdz10+qdz11*dfz)*Pin.roll*abs(Pin.roll))/(1+Pin.sideslip^2)^0.5;
@@ -4992,7 +4992,7 @@ This type of friction is perfectly interchangeable thanks to the Friction connec
   equation 
   // Torque1.tau=if (time<Tstart or time>Tfinish) and tmp.y<0 and abs(Rear_Slip)<.15 then if tmp.y>-800 then tmp.y else -800 else 0;
   // y1=if (time<Tstart or time>Tfinish) and tmp.y>0 then if tmp.y<1200 then tmp.y/1400 else 1 else 0;
-  Torque1.tau=if (time<Tstart or time>Tfinish) and abs(Rear_Slip)<.15 then if tmp.y>-700 then tmp.y else -700 else 0;
+  Torque1.tau=if (time<Tstart or time>Tfinish) and abs(Rear_Slip)<0.15 then if tmp.y>-700 then tmp.y else -700 else 0;
   y1=0;
    Add.u1=if time<Tstart or time>Tfinish then SP_Speed else AbsoluteSensor1.y[1];
     connect(Torque1.flange_b, flange_rear_hub) annotation (points=[82,-70; 90,
@@ -6550,7 +6550,7 @@ altitude that depends from x and y coordinate.
       Suspension.Front_Suspension.Data.KTM_950_Front_Suspension_data 
         Front_Suspension_data annotation (extent=[40,80; 60,100]);
       Suspension.Rear_Suspension.Data.KTM_950_Rear_Suspension_Data 
-        Rear_Suspension_data(                                  s_unstretched=.25,
+        Rear_Suspension_data(                                  s_unstretched=0.25,
           Spring=[-0.0746,-22640; -0.070,-15950; -0.069,-15470; -0.0675,-14655;
             -0.065,-13740; -0.060,-12300; -0.050,-9900; -0.0465,-9025; -0.040,-8050;
             -0.030,-6550; -0.020,-5050; -0.010,-3550; 0,2050; 0.010,3550; 0.020,
@@ -6826,7 +6826,7 @@ altitude that depends from x and y coordinate.
       Suspension.Front_Suspension.Data.KTM_950_Front_Suspension_data 
         Front_Suspension_data annotation (extent=[40,80; 60,100]);
       Suspension.Rear_Suspension.Data.KTM_950_Rear_Suspension_Data 
-        Rear_Suspension_data(                                  s_unstretched=.25,
+        Rear_Suspension_data(                                  s_unstretched=0.25,
           Spring=[-0.0746,-22640; -0.070,-15950; -0.069,-15470; -0.0675,-14655;
             -0.065,-13740; -0.060,-12300; -0.050,-9900; -0.0465,-9025; -0.040,-8050;
             -0.030,-6550; -0.020,-5050; -0.010,-3550; 0,2050; 0.010,3550; 0.020,
@@ -6996,7 +6996,7 @@ altitude that depends from x and y coordinate.
       Suspension.Front_Suspension.Data.KTM_950_Front_Suspension_data 
         Front_Suspension_data annotation (extent=[40,80; 60,100]);
       Suspension.Rear_Suspension.Data.KTM_950_Rear_Suspension_Data 
-        Rear_Suspension_data(                                  s_unstretched=.25,
+        Rear_Suspension_data(                                  s_unstretched=0.25,
           Spring=[-0.0746,-22640; -0.070,-15950; -0.069,-15470; -0.0675,-14655;
             -0.065,-13740; -0.060,-12300; -0.050,-9900; -0.0465,-9025; -0.040,-8050;
             -0.030,-6550; -0.020,-5050; -0.010,-3550; 0,2050; 0.010,3550; 0.020,
@@ -9050,7 +9050,7 @@ altitude that depends from x and y coordinate.
       Suspension.Front_Suspension.Data.KTM_950_Front_Suspension_data 
         Front_Suspension_data annotation (extent=[40,80; 60,100]);
       Suspension.Rear_Suspension.Data.KTM_950_Rear_Suspension_Data 
-        Rear_Suspension_data(                                  s_unstretched=.25,
+        Rear_Suspension_data(                                  s_unstretched=0.25,
           Spring=[-0.0746,-22640; -0.070,-15950; -0.069,-15470; -0.0675,-14655;
             -0.065,-13740; -0.060,-12300; -0.050,-9900; -0.0465,-9025; -0.040,-8050;
             -0.030,-6550; -0.020,-5050; -0.010,-3550; 0,2050; 0.010,3550; 0.020,
@@ -9254,7 +9254,7 @@ altitude that depends from x and y coordinate.
       Suspension.Front_Suspension.Data.KTM_950_Front_Suspension_data 
         Front_Suspension_data annotation (extent=[40,80; 60,100]);
       Suspension.Rear_Suspension.Data.KTM_950_Rear_Suspension_Data 
-        Rear_Suspension_data(                                  s_unstretched=.25,
+        Rear_Suspension_data(                                  s_unstretched=0.25,
           Spring=[-0.0746,-22640; -0.070,-15950; -0.069,-15470; -0.0675,-14655;
             -0.065,-13740; -0.060,-12300; -0.050,-9900; -0.0465,-9025; -0.040,-8050;
             -0.030,-6550; -0.020,-5050; -0.010,-3550; 0,2050; 0.010,3550; 0.020,
@@ -9528,7 +9528,7 @@ altitude that depends from x and y coordinate.
       Suspension.Front_Suspension.Data.KTM_950_Front_Suspension_data 
         Front_Suspension_data annotation (extent=[40,80; 60,100]);
       Suspension.Rear_Suspension.Data.KTM_950_Rear_Suspension_Data 
-        Rear_Suspension_data(                                  s_unstretched=.25,
+        Rear_Suspension_data(                                  s_unstretched=0.25,
           Spring=[-0.0746,-22640; -0.070,-15950; -0.069,-15470; -0.0675,-14655;
             -0.065,-13740; -0.060,-12300; -0.050,-9900; -0.0465,-9025; -0.040,-8050;
             -0.030,-6550; -0.020,-5050; -0.010,-3550; 0,2050; 0.010,3550; 0.020,
