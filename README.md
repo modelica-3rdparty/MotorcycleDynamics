@@ -30,7 +30,12 @@ For license conditions (including the disclaimer of warranty) visit [http://www.
 
 
 ## Development and contribution
-Original author: Filippo Donida
+Original author:
+ - Filippo Donida
+
+Contributors:
+ - Gianmario Fontana
+ - Francesco Schiavo
 
 You may report any issues with using the [Issues](../../issues) button.
 
